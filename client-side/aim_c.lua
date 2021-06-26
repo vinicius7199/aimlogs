@@ -20,7 +20,6 @@ Citizen.CreateThread(function()
                 local pedId = GetPlayerServerId(aiming)
 				local ped = PlayerPedId()
 				local IsWeaponLasso = IsPedWeaponReadyToShoot(ped)
-				print(weapon)
                 if used == false then
                     TriggerServerEvent('aimlogs:log', pedId )
                     used = true
